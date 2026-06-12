@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "vite --host",
-    "build": "vite build",
+    "build": "node build.js",
+    "build:static": "node build.js",
     "preview": "vite preview"
   },
   "devDependencies": {
