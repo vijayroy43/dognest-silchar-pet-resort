@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DogNest Silchar Pet Resort � Image Catalog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #0C1C2E;
+            --gold: #C9A84C;
+            --cream: #F7F2E8;
+            --white: #FFFFFF;
+        }
+        body {
+            font-family: 'Jost', sans-serif;
+            background-color: var(--navy);
+            color: var(--cream);
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .header h1 {
+            color: var(--gold);
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .header p {
+            color: rgba(247, 242, 232, 0.7);
+            font-size: 16px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 25px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(201, 168, 76, 0.2);
+            border-radius: 12px;
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--gold);
+        }
+        .img-container {
+            width: 100%;
+            height: 250px;
+            background: #050b12;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .label {
+            padding: 12px;
+            font-weight: 600;
+            background: rgba(0, 0, 0, 0.3);
+            border-top: 1px solid rgba(201, 168, 76, 0.1);
+        }
+        .label-name {
+            color: var(--gold);
+            font-size: 16px;
+            word-break: break-all;
+        }
+        .label-size {
+            font-size: 11px;
+            color: rgba(247, 242, 232, 0.5);
+            margin-top: 4px;
+        }
+        @media (max-width: 600px) {
+            body { padding: 20px 10px; }
+            .header { margin-bottom: 25px; }
+            .header h1 { font-size: 26px; }
+            .header p { font-size: 13px; }
+            .grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 12px; }
+            .img-container { height: 140px; }
+            .label { padding: 8px; }
+            .label-name { font-size: 11px; }
+            .label-size { font-size: 9px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>DogNest Photo Catalog</h1>
+        <p>This includes all user-uploaded images and downloaded images currently in your images folder.</p>
+    </div>
+    <div class="grid">        <div class="card">
+            <div class="img-container">
+                <a href="images/about.jpg" target="_blank">
+                    <img src="images/about.jpg" alt="about.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">about.jpg</div>
+                <div class="label-size">238727 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/bath_and_grooming.jpg" target="_blank">
+                    <img src="images/bath_and_grooming.jpg" alt="bath & grooming.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">bath & grooming.jpg</div>
+                <div class="label-size">6997 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/download_1.jpg" target="_blank">
+                    <img src="images/download_1.jpg" alt="download (1).jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">download (1).jpg</div>
+                <div class="label-size">16121 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/download_2.jpg" target="_blank">
+                    <img src="images/download_2.jpg" alt="download (2).jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">download (2).jpg</div>
+                <div class="label-size">8019 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/download_3.jpg" target="_blank">
+                    <img src="images/download_3.jpg" alt="download (3).jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">download (3).jpg</div>
+                <div class="label-size">10104 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/download.jpg" target="_blank">
+                    <img src="images/download.jpg" alt="download.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">download.jpg</div>
+                <div class="label-size">27355 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/gallery-1.jpg" target="_blank">
+                    <img src="images/gallery-1.jpg" alt="gallery-1.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">gallery-1.jpg</div>
+                <div class="label-size">62794 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/gallery-10.jpg" target="_blank">
+                    <img src="images/gallery-10.jpg" alt="gallery-10.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">gallery-10.jpg</div>
+                <div class="label-size">496890 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/gallery-11.jpg" target="_blank">
+                    <img src="images/gallery-11.jpg" alt="gallery-11.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">gallery-11.jpg</div>
+                <div class="label-size">130058 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/gallery-12.jpg" target="_blank">
+                    <img src="images/gallery-12.jpg" alt="gallery-12.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">gallery-12.jpg</div>
+                <div class="label-size">379917 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/gallery-13.jpg" target="_blank">
+                    <img src="images/gallery-13.jpg" alt="gallery-13.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">gallery-13.jpg</div>
+                <div class="label-size">504294 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/gallery-14.jpg" target="_blank">
+                    <img src="images/gallery-14.jpg" alt="gallery-14.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">gallery-14.jpg</div>
+                <div class="label-size">507075 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/gallery-15.jpg" target="_blank">
+                    <img src="images/gallery-15.jpg" alt="gallery-15.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">gallery-15.jpg</div>
+                <div class="label-size">144854 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/gallery-16.jpg" target="_blank">
+                    <img src="images/gallery-16.jpg" alt="gallery-16.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">gallery-16.jpg</div>
+                <div class="label-size">169840 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/gallery-17.jpg" target="_blank">
+                    <img src="images/gallery-17.jpg" alt="gallery-17.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">gallery-17.jpg</div>
+                <div class="label-size">232086 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/gallery-18.jpg" target="_blank">
+                    <img src="images/gallery-18.jpg" alt="gallery-18.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">gallery-18.jpg</div>
+                <div class="label-size">156729 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/gallery-19.jpg" target="_blank">
+                    <img src="images/gallery-19.jpg" alt="gallery-19.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">gallery-19.jpg</div>
+                <div class="label-size">232347 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/gallery-2.jpg" target="_blank">
+                    <img src="images/gallery-2.jpg" alt="gallery-2.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">gallery-2.jpg</div>
+                <div class="label-size">245244 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/gallery-20.jpg" target="_blank">
+                    <img src="images/gallery-20.jpg" alt="gallery-20.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">gallery-20.jpg</div>
+                <div class="label-size">310211 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/gallery-21.jpg" target="_blank">
+                    <img src="images/gallery-21.jpg" alt="gallery-21.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">gallery-21.jpg</div>
+                <div class="label-size">240506 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/gallery-22.jpg" target="_blank">
+                    <img src="images/gallery-22.jpg" alt="gallery-22.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">gallery-22.jpg</div>
+                <div class="label-size">267311 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/gallery-23.jpg" target="_blank">
+                    <img src="images/gallery-23.jpg" alt="gallery-23.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">gallery-23.jpg</div>
+                <div class="label-size">245110 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/gallery-24.jpg" target="_blank">
+                    <img src="images/gallery-24.jpg" alt="gallery-24.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">gallery-24.jpg</div>
+                <div class="label-size">320300 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/gallery-25.jpg" target="_blank">
+                    <img src="images/gallery-25.jpg" alt="gallery-25.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">gallery-25.jpg</div>
+                <div class="label-size">350454 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/gallery-26.jpg" target="_blank">
+                    <img src="images/gallery-26.jpg" alt="gallery-26.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">gallery-26.jpg</div>
+                <div class="label-size">236710 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/gallery-27.jpg" target="_blank">
+                    <img src="images/gallery-27.jpg" alt="gallery-27.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">gallery-27.jpg</div>
+                <div class="label-size">420519 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/gallery-28.jpg" target="_blank">
+                    <img src="images/gallery-28.jpg" alt="gallery-28.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">gallery-28.jpg</div>
+                <div class="label-size">237918 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/gallery-29.jpg" target="_blank">
+                    <img src="images/gallery-29.jpg" alt="gallery-29.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">gallery-29.jpg</div>
+                <div class="label-size">288812 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/gallery-3.jpg" target="_blank">
+                    <img src="images/gallery-3.jpg" alt="gallery-3.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">gallery-3.jpg</div>
+                <div class="label-size">238888 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/gallery-30.jpg" target="_blank">
+                    <img src="images/gallery-30.jpg" alt="gallery-30.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">gallery-30.jpg</div>
+                <div class="label-size">303074 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/gallery-31.jpg" target="_blank">
+                    <img src="images/gallery-31.jpg" alt="gallery-31.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">gallery-31.jpg</div>
+                <div class="label-size">310877 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/gallery-32.jpg" target="_blank">
+                    <img src="images/gallery-32.jpg" alt="gallery-32.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">gallery-32.jpg</div>
+                <div class="label-size">104143 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/gallery-33.jpg" target="_blank">
+                    <img src="images/gallery-33.jpg" alt="gallery-33.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">gallery-33.jpg</div>
+                <div class="label-size">47580 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/gallery-34.jpg" target="_blank">
+                    <img src="images/gallery-34.jpg" alt="gallery-34.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">gallery-34.jpg</div>
+                <div class="label-size">192355 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/gallery-35.jpg" target="_blank">
+                    <img src="images/gallery-35.jpg" alt="gallery-35.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">gallery-35.jpg</div>
+                <div class="label-size">167944 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/gallery-36.jpg" target="_blank">
+                    <img src="images/gallery-36.jpg" alt="gallery-36.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">gallery-36.jpg</div>
+                <div class="label-size">124691 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/gallery-37.jpg" target="_blank">
+                    <img src="images/gallery-37.jpg" alt="gallery-37.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">gallery-37.jpg</div>
+                <div class="label-size">267448 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/gallery-38.jpg" target="_blank">
+                    <img src="images/gallery-38.jpg" alt="gallery-38.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">gallery-38.jpg</div>
+                <div class="label-size">58861 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/gallery-39.jpg" target="_blank">
+                    <img src="images/gallery-39.jpg" alt="gallery-39.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">gallery-39.jpg</div>
+                <div class="label-size">266334 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/gallery-4.jpg" target="_blank">
+                    <img src="images/gallery-4.jpg" alt="gallery-4.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">gallery-4.jpg</div>
+                <div class="label-size">60254 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/gallery-40.jpg" target="_blank">
+                    <img src="images/gallery-40.jpg" alt="gallery-40.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">gallery-40.jpg</div>
+                <div class="label-size">273527 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/gallery-41.jpg" target="_blank">
+                    <img src="images/gallery-41.jpg" alt="gallery-41.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">gallery-41.jpg</div>
+                <div class="label-size">269976 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/gallery-5.jpg" target="_blank">
+                    <img src="images/gallery-5.jpg" alt="gallery-5.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">gallery-5.jpg</div>
+                <div class="label-size">241137 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/gallery-6.jpg" target="_blank">
+                    <img src="images/gallery-6.jpg" alt="gallery-6.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">gallery-6.jpg</div>
+                <div class="label-size">110210 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/gallery-7.jpg" target="_blank">
+                    <img src="images/gallery-7.jpg" alt="gallery-7.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">gallery-7.jpg</div>
+                <div class="label-size">254605 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/gallery-8.jpg" target="_blank">
+                    <img src="images/gallery-8.jpg" alt="gallery-8.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">gallery-8.jpg</div>
+                <div class="label-size">115439 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/gallery-9.jpg" target="_blank">
+                    <img src="images/gallery-9.jpg" alt="gallery-9.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">gallery-9.jpg</div>
+                <div class="label-size">302511 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/gallery-golden.jpg" target="_blank">
+                    <img src="images/gallery-golden.jpg" alt="gallery-golden.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">gallery-golden.jpg</div>
+                <div class="label-size">67973 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/gallery-grooming.jpg" target="_blank">
+                    <img src="images/gallery-grooming.jpg" alt="gallery-grooming.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">gallery-grooming.jpg</div>
+                <div class="label-size">58043 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/gallery-happy.jpg" target="_blank">
+                    <img src="images/gallery-happy.jpg" alt="gallery-happy.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">gallery-happy.jpg</div>
+                <div class="label-size">138782 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/gallery-playtime.jpg" target="_blank">
+                    <img src="images/gallery-playtime.jpg" alt="gallery-playtime.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">gallery-playtime.jpg</div>
+                <div class="label-size">102458 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/gallery-puppy.jpg" target="_blank">
+                    <img src="images/gallery-puppy.jpg" alt="gallery-puppy.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">gallery-puppy.jpg</div>
+                <div class="label-size">42295 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/gallery-spa.jpg" target="_blank">
+                    <img src="images/gallery-spa.jpg" alt="gallery-spa.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">gallery-spa.jpg</div>
+                <div class="label-size">101257 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/gallery-swimming.jpg" target="_blank">
+                    <img src="images/gallery-swimming.jpg" alt="gallery-swimming.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">gallery-swimming.jpg</div>
+                <div class="label-size">152992 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/gallery-training.jpg" target="_blank">
+                    <img src="images/gallery-training.jpg" alt="gallery-training.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">gallery-training.jpg</div>
+                <div class="label-size">75193 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/grooming.jpg" target="_blank">
+                    <img src="images/grooming.jpg" alt="grooming.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">grooming.jpg</div>
+                <div class="label-size">7997 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/grooming1.jpg" target="_blank">
+                    <img src="images/grooming1.jpg" alt="grooming1.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">grooming1.jpg</div>
+                <div class="label-size">160798 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/grooming2.jpg" target="_blank">
+                    <img src="images/grooming2.jpg" alt="grooming2.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">grooming2.jpg</div>
+                <div class="label-size">29289 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/grooming3.webp" target="_blank">
+                    <img src="images/grooming3.webp" alt="grooming3.webp" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">grooming3.webp</div>
+                <div class="label-size">26408 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/hero.jpg" target="_blank">
+                    <img src="images/hero.jpg" alt="hero.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">hero.jpg</div>
+                <div class="label-size">453237 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/images.jpg" target="_blank">
+                    <img src="images/images.jpg" alt="images.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">images.jpg</div>
+                <div class="label-size">8209 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/logo.jpeg" target="_blank">
+                    <img src="images/logo.jpeg" alt="logo.jpeg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">logo.jpeg</div>
+                <div class="label-size">60346 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/logo.png" target="_blank">
+                    <img src="images/logo.png" alt="logo.png" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">logo.png</div>
+                <div class="label-size">336031 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/obdience_3.jpg" target="_blank">
+                    <img src="images/obdience_3.jpg" alt="obdience 3.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">obdience 3.jpg</div>
+                <div class="label-size">7054 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/obdience2.jpg" target="_blank">
+                    <img src="images/obdience2.jpg" alt="obdience2.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">obdience2.jpg</div>
+                <div class="label-size">4298 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/spa_and_grooming1.jpg" target="_blank">
+                    <img src="images/spa_and_grooming1.jpg" alt="spa & grooming1.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">spa & grooming1.jpg</div>
+                <div class="label-size">24641 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/swimming_pool.jpg" target="_blank">
+                    <img src="images/swimming_pool.jpg" alt="Swimming pool.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">Swimming pool.jpg</div>
+                <div class="label-size">7433 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/swimming.jpg" target="_blank">
+                    <img src="images/swimming.jpg" alt="swimming.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">swimming.jpg</div>
+                <div class="label-size">7027 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/swimming1.jpg" target="_blank">
+                    <img src="images/swimming1.jpg" alt="swimming1.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">swimming1.jpg</div>
+                <div class="label-size">9926 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/swimming2.jpg" target="_blank">
+                    <img src="images/swimming2.jpg" alt="swimming2.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">swimming2.jpg</div>
+                <div class="label-size">12938 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/swimming3.jpg" target="_blank">
+                    <img src="images/swimming3.jpg" alt="swimming3.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">swimming3.jpg</div>
+                <div class="label-size">8984 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/training_2.jpg" target="_blank">
+                    <img src="images/training_2.jpg" alt="training (2).jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">training (2).jpg</div>
+                <div class="label-size">8903 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/training.jpg" target="_blank">
+                    <img src="images/training.jpg" alt="training.jpg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">training.jpg</div>
+                <div class="label-size">7105 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/vijay.jpeg" target="_blank">
+                    <img src="images/vijay.jpeg" alt="vijay.jpeg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">vijay.jpeg</div>
+                <div class="label-size">169840 bytes</div>
+            </div>
+        </div>        <div class="card">
+            <div class="img-container">
+                <a href="images/whatsapp_image_resort.jpeg" target="_blank">
+                    <img src="images/whatsapp_image_resort.jpeg" alt="WhatsApp Image 2026-06-10 at 9.38.40 PM.jpeg" loading="lazy">
+                </a>
+            </div>
+            <div class="label">
+                <div class="label-name">WhatsApp Image 2026-06-10 at 9.38.40 PM.jpeg</div>
+                <div class="label-size">192355 bytes</div>
+            </div>
+        </div>    </div>
+</body>
+</html>
