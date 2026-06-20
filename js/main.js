@@ -7,36 +7,26 @@
 const DEFAULT_REVIEWS = [
     { id: 1, name: "Priya Sharma (Silchar)", pet: "Bruno (Golden Retriever)", service: "Boarding", rating: 5, text: "Absolutely wonderful experience! Bruno was so happy when we picked him up. The staff treated him like family. The facility is clean, spacious, and well-maintained. Highly recommend for any pet parent!", date: "2026-05-15", avatar: "🐕" },
     { id: 3, name: "Ananya Das (Karimganj)", pet: "Max (German Shepherd)", service: "Training", rating: 4, text: "Max completed the obedience training program and the transformation is incredible. He follows commands, walks properly on leash, and is much calmer. The positive reinforcement methods work wonders.", date: "2026-05-04", avatar: "🦮" },
-    { id: 4, name: "Vikram Singh (Silchar)", pet: "Bella (Shih Tzu)", service: "Grooming", rating: 5, text: "Bella looks absolutely adorable after her grooming session! The groomers were gentle and patient with her. Full spa treatment — bath, haircut, nail trim, and ear cleaning. She smells amazing!", date: "2026-04-18", avatar: "🐩" },
     { id: 5, name: "Meera Gogoi (Hailakandi)", pet: "Rocky (Rottweiler)", service: "Boarding", rating: 5, text: "We were nervous leaving Rocky for the first time but the team at DOGNEST put our minds at ease with daily photo/video updates. Rocky was clearly having a blast. Spacious and clean rooms. Best resort!", date: "2026-04-20", avatar: "🐕" },
     { id: 6, name: "Sanjay Choudhury (Karimganj)", pet: "Simba (Indie)", service: "Training", rating: 5, text: "Simba was a rescue and had serious behavioral issues. After the advanced program here, he's calm, patient, and obedient. The trainers truly understand canine behavior. Couldn't be happier with the results.", date: "2026-04-10", avatar: "🐶" },
-    { id: 7, name: "Nisha Barua (Tarapur, Silchar)", pet: "Coco (Pomeranian)", service: "Grooming", rating: 4, text: "Coco always gets anxious at groomers but the team here made her feel comfortable. The grooming was excellent — she looks like a show dog now! Professional and friendly staff.", date: "2026-03-24", avatar: "🐕" },
     { id: 9, name: "Kavita Roy (Hailakandi)", pet: "Buddy (Beagle)", service: "Boarding", rating: 4, text: "Good boarding facility with caring staff. Buddy seemed comfortable and well-fed. The CCTV monitoring and daily updates on WhatsApp gave us peace of mind. Overall a great experience.", date: "2026-03-15", avatar: "🐶" },
     { id: 10, name: "Deepak Laskar (Dudhpatil)", pet: "Leo (Doberman)", service: "Training", rating: 5, text: "Professional training at its finest. Leo completed basic obedience and behavioral training. The trainers are knowledgeable, patient, and genuinely care. Highly recommended in Barak Valley!", date: "2026-03-01", avatar: "🦮" },
     { id: 11, name: "Monalisa Nath (Karimganj)", pet: "Toby (Pug)", service: "Boarding", rating: 5, text: "Left Toby here for 5 days. He was pampered so well! The staff shared regular updates. The cage-free play area is amazing.", date: "2026-05-28", avatar: "🐕" },
     { id: 13, name: "Rumana Laskar (Dudhpatil)", pet: "Shera (Indie)", service: "Training", rating: 5, text: "Shera was very aggressive towards strangers. Trainer Vijay handled him perfectly. He is much more sociable now.", date: "2026-05-22", avatar: "🐕" },
-    { id: 14, name: "Biswajit Paul (Karimganj)", pet: "Leo (Golden Retriever)", service: "Grooming", rating: 5, text: "Superb grooming service. The de-shedding treatment worked wonders. Very clean facility and professional groomers.", date: "2026-05-20", avatar: "🐩" },
     { id: 15, name: "Suhana Barbhuiya (Hailakandi)", pet: "Koko (Cocker Spaniel)", service: "Boarding", rating: 5, text: "Clean rooms, nutritious food, and plenty of playtime. Koko was extremely happy and active when he returned.", date: "2026-05-18", avatar: "🐶" },
     { id: 16, name: "Subodh Das (Patharkandi)", pet: "Milo (Beagle)", service: "Training", rating: 4, text: "Milo was notorious for chewing furniture. The behavioral training sessions really helped set boundaries. Good results.", date: "2026-05-14", avatar: "🐕" },
-    { id: 18, name: "Anirban Bhattacharjee (Rangirkhari, Silchar)", pet: "Oreo (Shih Tzu)", service: "Grooming", rating: 5, text: "Oreo got a premium summer cut and bath. The styling was perfect and they were very gentle with his sensitive skin.", date: "2026-05-09", avatar: "🐩" },
     { id: 19, name: "Pallabi Dey (Tarapur, Silchar)", pet: "Sweety (Pomeranian)", service: "Boarding", rating: 4, text: "Very secure and hygienic boarding. Sweety is a picky eater but the staff took special care of her diet. Great updates.", date: "2026-05-07", avatar: "🐕" },
     { id: 20, name: "Rajesh Nunia (Sonai)", pet: "Sheru (Gaddi Dog)", service: "Training", rating: 5, text: "Vijay's understanding of canine behavior is outstanding. Basic obedience training was successful. Excellent service.", date: "2026-05-05", avatar: "🦮" },
-    { id: 22, name: "Kishore Debnath (Udharbond)", pet: "Buzzo (French Bulldog)", service: "Grooming", rating: 4, text: "Quality grooming session. The ear cleaning and nail trimming were done with great care. Very professional crew.", date: "2026-04-29", avatar: "🐩" },
     { id: 23, name: "Javed Laskar (Dudhpatil)", pet: "Simba (German Shepherd)", service: "Boarding", rating: 5, text: "DOGNEST is like a second home for Simba. Whenever we travel out of station, we leave him here without any worries.", date: "2026-04-26", avatar: "🐕" },
     { id: 24, name: "Tanmay Das (Hailakandi)", pet: "Pluto (Indie)", service: "Training", rating: 5, text: "We joined the basic puppy class. Pluto learned socialization, commands, and manners. The trainer was very supportive.", date: "2026-04-22", avatar: "🐶" },
-    { id: 25, name: "Shubhra Dey (Karimganj)", pet: "Mia (Shih Tzu)", service: "Grooming", rating: 5, text: "Mia looks like a fluffy cloud after her spa session. They used high quality shampoo. Best pet groomer in Cachar district.", date: "2026-04-17", avatar: "🐩" },
     { id: 26, name: "Manish Choudhury (Silchar)", pet: "Rambo (Rottweiler)", service: "Boarding", rating: 5, text: "Excellent security and clean boarding. Rambo is large and energetic, but the staff managed him very professionally.", date: "2026-04-14", avatar: "🐕" },
     { id: 28, name: "Subrata Paul (Patharkandi)", pet: "Shadow (Husky)", service: "Training", rating: 4, text: "Shadow is very stubborn, but the trainer's patience worked wonders. He now listens and responds to commands.", date: "2026-04-08", avatar: "🦮" },
     { id: 29, name: "Vikramaditya Deb (Dudhpatil)", pet: "Gigi (Chihuahua)", service: "Boarding", rating: 5, text: "Very friendly environment. Gigi is tiny and nervous around big dogs, but they kept her in a safe separate cozy area.", date: "2026-04-05", avatar: "🐕" },
-    { id: 30, name: "Anupam Nath (Silchar)", pet: "Zorro (German Shepherd)", service: "Grooming", rating: 5, text: "Professional grooming. Groomers spent 2 hours detangling and washing Zorro's thick coat. He looks spectacular.", date: "2026-04-02", avatar: "🐩" },
     { id: 31, name: "Farhana Yasmin (Karimganj)", pet: "Daisy (Labrador)", service: "Boarding", rating: 5, text: "Outstanding service. The daily video updates on WhatsApp made our holiday stress-free. Daisy had a great time.", date: "2026-03-28", avatar: "🐕" },
     { id: 33, name: "Sneha Bhattacharya (Silchar)", pet: "Kalu (Indie)", service: "Training", rating: 5, text: "Highly satisfied. Basic leash manners and recall training were highly effective. Vijay is an excellent dog whisperer.", date: "2026-03-22", avatar: "🐶" },
-    { id: 34, name: "Rohan Laskar (Rangirkhari, Silchar)", pet: "Chester (Beagle)", service: "Grooming", rating: 4, text: "Friendly staff and high-quality styling. Chester smells like lavender now. Very clean pet grooming room.", date: "2026-03-18", avatar: "🐩" },
     { id: 35, name: "Subir Roy (Malidor)", pet: "Casper (Spitz)", service: "Boarding", rating: 5, text: "Casper is a senior dog who needs medications. The staff administered his medicines on time and kept him comfortable.", date: "2026-03-14", avatar: "🐕" },
     { id: 36, name: "Mithun Deb (Dudhpatil)", pet: "Roxy (German Shepherd)", service: "Training", rating: 5, text: "Excellent dog training center. Roxy learned basic control, heel, and sit commands perfectly. Highly cooperative staff.", date: "2026-03-10", avatar: "🦮" },
-    { id: 37, name: "Sujata Chakraborty (Hailakandi)", pet: "Jimmy (Pomeranian)", service: "Grooming", rating: 5, text: "Jimmy had a lovely bath and blow dry session. His coat looks silky and clean. Very reasonable pricing too.", date: "2026-03-08", avatar: "🐩" },
     { id: 39, name: "Imran Hussain (Silchar)", pet: "Sheru (Indie)", service: "Boarding", rating: 5, text: "DOGNEST is safe and clean. They have a big open field for play. Sheru returned happy and active. Excellent place.", date: "2026-03-02", avatar: "🐕" },
-    { id: 40, name: "Prasenjit Dey (Tarapur, Silchar)", pet: "Mimi (Shih Tzu)", service: "Grooming", rating: 5, text: "Excellent teddy bear cut for my Shih Tzu. The groomer was very skilled and handled Mimi with absolute gentleness.", date: "2026-02-28", avatar: "🐩" },
     { id: 41, name: "Nilanjana Dutta (Meherpur, Silchar)", pet: "Max (Rottweiler)", service: "Training", rating: 4, text: "Behavioral correction program was beneficial. Max is much more obedient and less reactive to doorbells now.", date: "2026-02-25", avatar: "🦮" },
     { id: 42, name: "Sourav Nath (Karimganj)", pet: "Scooby (Labrador)", service: "Boarding", rating: 5, text: "Very friendly boarding facility. Scooby made many new dog friends. The staff really treats dogs with a lot of love.", date: "2026-02-22", avatar: "🐕" }
 ];
@@ -53,6 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loadReviews();
     renderReviews();
     renderReviewStats();
+    initReviewFilters();
     initScrollReveal();
     initHeader();
     initMobileMenu();
@@ -77,14 +68,14 @@ document.addEventListener('DOMContentLoaded', () => {
 // ─── REVIEWS CRUD ───────────────────────────────────
 function loadReviews() {
     try {
-        const stored = localStorage.getItem('dognest_reviews_v3');
+        const stored = localStorage.getItem('dognest_reviews_v4');
         allReviews = stored ? JSON.parse(stored) : [...DEFAULT_REVIEWS];
     } catch { allReviews = [...DEFAULT_REVIEWS]; }
     if (!allReviews.length) { allReviews = [...DEFAULT_REVIEWS]; saveReviews(); }
 }
 
 function saveReviews() {
-    try { localStorage.setItem('dognest_reviews_v3', JSON.stringify(allReviews)); } catch {}
+    try { localStorage.setItem('dognest_reviews_v4', JSON.stringify(allReviews)); } catch {}
 }
 
 function addReview(review) {
@@ -173,6 +164,14 @@ function setSortOrder(e) {
     curSort = e.target.value;
     displayedCount = 6;
     renderReviews();
+}
+
+function initReviewFilters() {
+    document.querySelectorAll('.rf-btn[data-filter]').forEach(btn => {
+        btn.addEventListener('click', () => setFilter(btn.dataset.filter, btn));
+    });
+    const sortEl = document.getElementById('reviewSort');
+    if (sortEl) sortEl.addEventListener('change', e => setSortOrder(e));
 }
 
 // ─── STAR SELECTOR ──────────────────────────────────
